@@ -317,7 +317,7 @@ function drawFullscreenButton() {
 draw = function() {
 	let pointerKeys = Object.keys(pointers); 
 	pointerKeys.forEach((pointerKey) => {
-		if (pointers[pointerKey] !== undefined) { // If any pointer is detected
+		if (pointers[pointerKey] !== undefined && pointers[pointerKey].event.detail === 0) { // If any pointer is detected
 			pointerX = pointers[pointerKey].x;
 			pointerY = pointers[pointerKey].y;
 		}
