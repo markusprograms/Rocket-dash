@@ -260,6 +260,13 @@ function leaderboardPage() {
 }
 
 function drawFullscreenButton() {
+	fill(255);
+	textSize(13);
+	noStroke(); 
+	textAlign(CENTER, BOTTOM);
+	text("Press and hold the fullscreen button to enter/exit fullscreen mode", width / 2, height - 10, (width - 120) / 8); 
+	textAlign(CENTER, CENTER);
+	
 	stroke(255); 
 	strokeWeight(3); 
 
@@ -388,7 +395,7 @@ draw = function() {
 			}
 
 			textSize(100);
-			text(rocketEmoji, width / 2, height - 100);
+			text(rocketEmoji, width / 2, height - 120);
 
 			drawFullscreenButton(); 
 		}
