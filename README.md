@@ -14,6 +14,6 @@ The game runs on all devices, including **mobile phones and tablets**. The prefe
 - **q5js.org** - Q5.js library and example code
 - **ChatGPT** - fullscreen status check
 
-## Screenshot
+## Screenshots
 ![Menu screenshot](./screenshots/menu.png)
 ![Game screenshot](./screenshots/game.png)
