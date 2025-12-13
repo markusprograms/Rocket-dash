@@ -21,7 +21,7 @@ new Q5("global");
 createCanvas(windowWidth, windowHeight);
 let canvasTooSmall = false;
 let minCanvasWidth = 400;
-let minCanvasHeight = 400;
+let minCanvasHeight = 600;
 if (windowWidth < minCanvasWidth || windowHeight < minCanvasHeight) {
 	canvasTooSmall = true;
 }
@@ -309,7 +309,7 @@ function drawFullscreenButton() {
 }
 
 draw = function() {
-    let pointerKeys = Object.keys(pointers); 
+	let pointerKeys = Object.keys(pointers); 
 	pointerKeys.forEach((pointerKey) => {
 		if (pointers[pointerKey] !== undefined) { // If any pointer is detected
 			pointerX = pointers[pointerKey].x;
