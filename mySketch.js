@@ -52,7 +52,6 @@ let how = false;
 let leaderboardShow = false;
 let score = 0;
 let rocketSpeed = 3;
-let keys = [];
 let leaderboard = [
 	4160, "Ace Rogers",
 	3942, "Alexander Brooks",
@@ -410,14 +409,6 @@ function touchStarted() {
 
 function touchEnded() {
 	mouse = false;
-}
-
-function keyPressed() {
-	keys[key.code] = true;
-}
-
-function keyReleased() {
-	keys[key.code] = false;
 }
 
 function windowResized() {
