@@ -167,7 +167,7 @@ function retry() {
 			rocketSpeed = 3;
 
 			asteroids = [];
-			for (let i = 0; i < 10; i++) {
+			for (let i = 0; i < width * height / 24000; i++) {
 				asteroids.push(round(random(0, width)));
 				asteroids.push(round(random(-height, 0)));
 			}
